@@ -73,7 +73,7 @@ def test_top_edge():
     # Check the coordinates of the neighbours.
     assert c.left()  == (1, 3)
     assert c.right() == (3, 3)
-    assert c.up()    == (4, 2) #None
+    assert c.up()    == (2, 4) #None
     assert c.down()  == (2, 2)
 
 def test_bottom_left_corner():
