@@ -67,7 +67,8 @@ def test_top_edge():
     c = Cell(2, 3, 4, 4)
 
     # Make sure that the cell has 3 neighbours.
-    assert c.neighbours() == 3
+    assert c.neighbours() == 4 #3
+
 
     # Check the coordinates of the neighbours.
     assert c.left()  == (1, 3)
@@ -112,7 +113,7 @@ def test_top_left_corner():
     c = Cell(0, 3, 4, 4)
 
     # Make sure that the cell has 2 neighbours.
-    assert c.neighbours() == 2
+    assert c.neighbours() == 3 #2
 
     # Check the coordinates of the neighbours.
     assert c.left()  == None
@@ -127,7 +128,7 @@ def test_top_right_corner():
     c = Cell(3, 3, 4, 4)
 
     # Make sure that the cell has 2 neighbours.
-    assert c.neighbours() == 2
+    assert c.neighbours() == 3 #2
 
     # Check the coordinates of the neighbours.
     assert c.left()  == (2, 3)
